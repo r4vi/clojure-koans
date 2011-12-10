@@ -1,7 +1,7 @@
 (defn is-even? [n]
   (if (= n 0)
-    __
-    (___ (is-even? (dec n)))))
+    true 
+    (not (is-even? (dec n)))))
 
 (defn is-even-bigint? [n]
   (loop [n   n
@@ -16,7 +16,7 @@
 (defn factorial [n]
   __)
 
-(meditations
+#_ (meditations
   "Recursion ends with a base case"
   (= true (is-even? 0))
 
